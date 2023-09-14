@@ -5,7 +5,7 @@ cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 
 while True:
-    
+    _, frame = cap.read()
     hsv_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     height, width, _ = frame.shape
 
